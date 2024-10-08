@@ -169,6 +169,42 @@
         }
          return parent;
      }
+
+     public void RemovePred(int value)
+     {
+         this.Root = RemovePred(this.Root, value);
+     }
+
+     //Just like remove RemovePred uses a helper method
+     public Node RemovePred(Node parent, int key)
+     {
+         if (parent == null) return parent; 
+
+         if (key < parent.Data) //if value is less than node's data
+             parent.LeftNode = Remove(parent.LeftNode, key);//Move to the left, and recursively call the Remove method again
+         //then assign return value as left child of last node visited
+         else if (key > parent.Data)
+         {
+             parent.RightNode = Remove(parent.RightNode, key); //Move to the right, and recursively call the Remove method again
+             //then assign return value as right child of last node visited
+         }
+         
+         else // if value is same as node's value, then this is the node to be deleted 
+         {
+             // For node with only one child or no child  
+             if (parent.LeftNode == null)//If its left node is empty
+                 return parent.RightNode; //return node's right child
+             else if (parent.RightNode == null) //If its right node is empty
+                 return parent.LeftNode;  //return node's left child
+
+             // node with two children: Get the predecessor  (largest in the left subtree)  
+             parent.Data = MaxValue(parent.LeftNode); //Make predecessor  value the value of last node visited
+
+             // Recursively Delete 
+             parent.LeftNode = Remove(parent.LeftNode, parent.Data);
+         }
+         return parent;
+     }
     
      public int MinValue(Node node) //Implements the IBinaryTree interface MinValue  method: gets the smallest value in a node's subtree
     {
@@ -181,6 +217,17 @@
          }
 
          return min; //Return the minimum value
+     }
+
+     public int MaxValue(Node node)
+     {
+         int max = node.Data;
+         while (node.RightNode != null)
+         {
+             max = node.RightNode.Data;
+             node = node.RightNode;
+         }
+         return max;
      }
 
      public LinkedList<int> ReturnLinkedList()

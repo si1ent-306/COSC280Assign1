@@ -54,6 +54,12 @@ using System.Threading.Tasks;
     /// <param name="value">The value to be deleted</param>
     /// <returns>void</returns>
     public void Remove(int value);
+    /// <summary>
+    /// Searches the Binary tree for the predecessor of passed value and deletes it
+    /// </summary>
+    /// <param name="value">The value whose predecessor will be deleted</param>
+    /// <returns>void</returns>
+    public void RemovePred(int value);
 
     /// <summary>
     /// Returns the minimum value in a given subtree 
@@ -61,6 +67,13 @@ using System.Threading.Tasks;
     /// <param name="node">The node to start the minimum value search from</param>
     /// <returns>The minimum value in a sub tree (from a given node)</returns>
     int MinValue(Node node);
+    
+    /// <summary>
+    /// Returns the maximum value in a given subtree 
+    /// </summary>
+    /// <param name="node">The node to start the maximum value search from</param>
+    /// <returns>The maximum value in a sub tree (from a given node)</returns>
+    int MaxValue(Node node);
     
     /// <summary>
     /// Returns linked list of the tree descending
