@@ -183,20 +183,24 @@
          return min; //Return the minimum value
      }
 
-     public LinkedList<T> ToLinkedList<T>(Node node)
+     public LinkedList<int> ReturnLinkedList()
      {
-         LinkedList<T> list = new LinkedList<T>();
-         if (node != null) //if the CURRENT NODE is not empty/ not fallen off the tree
-         {
-             int a= node.Data;
-             Node n = node;
-             TraverseInOrder(node.LeftNode);// Move to left child and call TraverseInorder method
-             int b = node.Data;
-             Console.Write(node.Data + " "); //Display the node's data
-             TraverseInOrder(node.RightNode); // Move to right child and call TraverseInorder method
-             
-         }
+         LinkedList<int> list = new LinkedList<int>();
+         RecursiveReturnLinkedList(Root, list);
          return list;
+     }
+
+     private void RecursiveReturnLinkedList(Node root, LinkedList<int> list)
+     {
+         if (root == null)
+         {
+             return;
+         }
+
+         RecursiveReturnLinkedList(root.RightNode, list);
+         list.AddLast(root.Data);
+         RecursiveReturnLinkedList(root.LeftNode, list);
+         
      }
 
 }

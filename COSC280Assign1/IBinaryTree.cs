@@ -67,6 +67,18 @@ using System.Threading.Tasks;
     /// </summary>
     /// <param name="node">This is the tree we make the list out of</param>
     /// <returns>The linked list</returns>
-    public LinkedList<T> ToLinkedList<T>(Node node);
+    public LinkedList<int> ReturnLinkedList();
+
+    private void RecursiveReturnLinkedList(Node root, LinkedList<int> list)
+    {
+        if (root == null)
+        {
+            return;
+        }
+
+        RecursiveReturnLinkedList(root.RightNode, list);
+        list.AddLast(root.Data);
+        RecursiveReturnLinkedList(root.LeftNode, list);
+    }
     }
 
