@@ -12,3 +12,17 @@ C:\Users\ellio\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\refi
 C:\Users\ellio\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.pdb
 C:\Users\ellio\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.genruntimeconfig.cache
 C:\Users\ellio\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\ref\COSC280Assign1.dll
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\bin\Debug\net7.0\COSC280Assign1.exe
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\bin\Debug\net7.0\COSC280Assign1.deps.json
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\bin\Debug\net7.0\COSC280Assign1.runtimeconfig.json
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\bin\Debug\net7.0\COSC280Assign1.dll
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\bin\Debug\net7.0\COSC280Assign1.pdb
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.AssemblyInfoInputs.cache
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.AssemblyInfo.cs
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.csproj.CoreCompileInputs.cache
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.dll
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\refint\COSC280Assign1.dll
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.pdb
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\COSC280Assign1.genruntimeconfig.cache
+C:\Users\wagner3956\RiderProjects\COSC280Assign1\COSC280Assign1\obj\Debug\net7.0\ref\COSC280Assign1.dll

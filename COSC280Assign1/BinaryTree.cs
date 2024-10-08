@@ -185,20 +185,29 @@
 
      public LinkedList<int> ReturnLinkedList()
      {
+         //This list will be the one returned
          LinkedList<int> list = new LinkedList<int>();
+         //use a recursive helper method that is given the root element, and the list to fill
          RecursiveReturnLinkedList(Root, list);
+         //Return the new list
          return list;
      }
 
      private void RecursiveReturnLinkedList(Node root, LinkedList<int> list)
      {
+         //Break Condition is when the end of a subtree is reached
          if (root == null)
          {
              return;
          }
 
+         //If we want it to be in desending order, we start with teh highest, or the right tree
+         //So go to the end of the tree then add
          RecursiveReturnLinkedList(root.RightNode, list);
+         //The root node would be between the to trees obviously
+         //This line adds the number from the root at the time at the end making it decend
          list.AddLast(root.Data);
+         //Then finish to to the left tree
          RecursiveReturnLinkedList(root.LeftNode, list);
          
      }
