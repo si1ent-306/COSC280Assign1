@@ -144,7 +144,13 @@ public class AVL : IAVLTree
             }
             return current; // Return node
         }
-        
+
+        public void RemoveBalance(int target)
+        {
+            Delete(root, target);
+            balance_factor(root);
+        }
+
         //Implements the AVLTree Find method: searches for the node containing a given value
         public void Find(int key)
         {

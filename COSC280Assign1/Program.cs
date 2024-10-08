@@ -50,3 +50,16 @@ foreach (int num in list8)
 {
     Console.Write(num + " ");
 }
+//QUESTION 9 OUTPUT
+Console.WriteLine();
+Console.WriteLine("QUESTION 9 OUTPUT");
+AVL avl = new AVL();
+avl.Add(8);
+avl.Add(3);
+avl.Add(1);
+avl.Add(6);
+avl.Add(4);
+avl.InOrderDisplayTree(avl.root);
+avl.RemoveBalance(6);
+Console.WriteLine();
+avl.InOrderDisplayTree(avl.root);
