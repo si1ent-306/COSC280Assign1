@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-//QUESTION 6 OUTPUT
+﻿//QUESTION 6 OUTPUT
 Console.WriteLine("QUESTION 6 OUTPUT");
 LinkList<int> l = new LinkList<int>();
 l.InsertFirst(1); //Insert into Linkedlist
@@ -32,6 +30,7 @@ foreach (int num in list)
     Console.Write(num + " ");
 }
 
+Console.WriteLine();
 //QUESTION 8 OUTPUT
 Console.WriteLine("QUESTION 8 OUTPUT");
 Binary_Tree b8 = new Binary_Tree();
